@@ -1,0 +1,122 @@
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Document</title>
+	    <link rel="stylesheet" type="text/css" href="../css/formulario salesforce.css">
+	</head>
+	
+	    <body background="https://www.solofondos.com/wp-content/uploads/2015/11/Imagen-de-fondo-html.jpg">
+	    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+
+	
+		<input type=hidden name="oid" value="00D5I000003bdZ8">
+	
+		<input type=hidden name="retURL" value="http://">
+
+	<!--  ----------------------------------------------------------------------  -->
+	<!--  NOTA: Estos campos son elementos de depuración opcionales. Elimine      -->
+	<!--  los comentarios de estas líneas si desea realizar una prueba en el      -->
+	<!--  modo de depuración.                                                     -->
+	<!--  <input type="hidden" name="debug" value=1>                              -->
+	<!--  <input type="hidden" name="debugEmail"                                  -->
+	<!--  value="arghsalesforce4@gmail.com">                                      -->
+	<!--  ----------------------------------------------------------------------  -->
+
+
+<img src="https://cdn.iconscout.com/icon/free/png-512/salesforce-3-569548.png" alt="salesforce"><br>
+	<div id="header">
+			<ul class="nav">
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Servicios</a>
+					<ul>
+						<li><a href="">Submenu1</a></li>
+						<li><a href="">Submenu2</a></li>
+						<li><a href="">Submenu3</a></li>
+						<li><a href="">Submenu4</a>
+							<ul>
+								<li><a href="">Submenu1</a></li>
+								<li><a href="">Submenu2</a></li>
+								<li><a href="">Submenu3</a></li>
+								<li><a href="">Submenu4</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Acerca de</a>
+					<ul>
+						<li><a href="">Submenu1</a></li>
+						<li><a href="">Submenu2</a></li>
+						<li><a href="">Submenu3</a></li>
+						<li><a href="">Submenu4</a></li>
+					</ul>
+				</li>
+				<li><a href="">Contacto</a></li>
+			</ul>
+		</div>
+		<br>
+<h1>Formulario de Salesforce</h1>
+	<div class="datos">
+		<form method="post">
+			<fieldset>
+				<legend style="font-size:200% ; ">Registro</legend>
+				<br>
+					<label for="first_name">Nombre:</label><br><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+					<label for="last_name">Apellidos:</label><br><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+					<p>Sexo:</p>
+    				<input type="radio" name="sexo" id="hombre" value="h">
+					<label for="hombre">Hombre</label><br>
+    				<input type="radio" name="sexo" id="mujer"value="m" checked >
+					<label for="mujer">Mujer</label> 
+					<br>
+
+					<label for="email">Correo electrónico:</label><br><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+					<label for="company">Compañía:</label><br><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+					<label for="city">Ciudad:</label><br><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+
+					<label for="provincia" id="provincia">
+       					 Provincia
+    				</label><br> 
+					<select name="provincia">
+       					<option value="av">Ávila</option>
+      					<option value="bu">Burgos</option>
+      					<option value="l">León</option>
+       					<option value="ma">Madrid</option>
+       					<option value="p">Palencia</option>
+       					<option value="sg">Segovia</option>
+					    <option value="so">Soria</option>
+					    <option value="sa">Salamanza</option>
+					    <option value="va">Valladolid</option>
+					    <option value="za">Zamora</option>
+   					</select>
+   <br>
+   					<label for="fecha_nac">Fecha de nacimiento</label><br>
+     				<input type="date" name="fecha_nac" id="fecha_nac">
+   <br>
+				    <label for="rango">Seleccione su edad</label><br>
+				    <input type="range" name="range" id="range" 
+				    value="25" min="18" max="65" step="1">
+     
+   <br>
+				   Añade un comentario: <br>
+				    <textarea rows="10" cols="40" name="texto">Escribir...</textarea><br>
+    <br>
+					<input type="reset" value="Borrar" id="identificador"> 
+					<input type="submit" name="submit">
+
+		
+			</fieldset>
+		</form>
+
+	</div>
+
+	</form>
+
+
+	</body>
+	</html>
